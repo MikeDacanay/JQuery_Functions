@@ -4,9 +4,84 @@
         <meta charset="utf-8">
 		<title> JQuery Functions
 		</title>
+		<link rel="stylesheet" type="text/css" href = "style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
+		<div id = div_toggle>
+			<h1 id = toggle_us> TOGGLE to hide in and out </h1>
+			<button>Toggle By Click</button>
+			<p> TOGGLE to hide in and out </p>   <!-- should toggle at in and out at a slower rate and open an annoying pop up-->
+		</div>
+		<script>
+			function alabama() {
+				alert("caught up toggling the paragraph :)");
+				}
+
+			$("#div_toggle button").click(function() {
+				$("#div_toggle h1").toggle();
+				$("#div_toggle p").toggle([800],[alabama()]);
+				});
+		</script>
+		<!-- s
+		// <div id = div_slideToggle>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_fadeToggle>
+		// 	<h1> TOGGLE to fade us in and out </h1>
+		// 	<button>AddClass</button>
+		// 	<p> TOGGLE to fade us in and out </p>
+		// </div>
+		// <div id = div_addClass>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_before>
+		// 	<h1> ADD Elements/ </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_after>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_after>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_append>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_html>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_attr>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_val>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>		
+		// <div id = div_text>
+		// 	<h1> ADD CLASS </h1>
+		// 	<button>AddClass</button>
+		// 	<p> Click button to add class </p>
+		// </div>
+		// <div id = div_data>
+		// 	<h1> Add DATA </h1>
+		// 	<button>AddData</button>	 -->		
 	</body>
 </html>
 
