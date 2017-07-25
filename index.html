@@ -15,12 +15,26 @@
 		</div>
 		<script>
 			function alabama() {
-				alert("caught up toggling the paragraph :)");
+				alert("caught up messing with this paragraph :)");
 				}
 
 			$("#div_toggle button").click(function() {
 				$("#div_toggle h1").toggle();
 				$("#div_toggle p").toggle([800],[alabama()]);
+				});
+		</script>
+		<div id = div_slidetoggle>
+			<h1 id = toggle_us> TOGGLE to hide in and out </h1>
+			<button>Toggle By Click</button>
+			<img src = "codeigniter.png" height = "100%"" width = "100">
+		</div>
+		<script>
+			function alabama() {
+				alert("caught up messing with this paragraph :)");
+				}
+			$("#div_slidetoggle button").click(function() {
+				$("#div_slidetoggle h1").slideToggle();
+				$("#div_slidetoggle img").slideToggle(800);
 				});
 		</script>
 		<!-- s
