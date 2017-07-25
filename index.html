@@ -8,6 +8,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
+		<script>
+			function blueUs(){
+				$(this).addClass("blue");
+			}
+		</script>
 		<div id = div_toggle>
 			<h1 id = toggle_us> TOGGLE to hide in and out </h1>
 			<button>Toggle By Click</button>
@@ -29,73 +34,20 @@
 			<img src = "codeigniter.png" height = "100%"" width = "100">
 		</div>
 		<script>
-			function alabama() {
-				alert("caught up messing with this paragraph :)");
-				}
 			$("#div_slidetoggle button").click(function() {
 				$("#div_slidetoggle h1").slideToggle();
 				$("#div_slidetoggle img").slideToggle(800);
 				});
 		</script>
-		<!-- s
-		// <div id = div_slideToggle>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_fadeToggle>
-		// 	<h1> TOGGLE to fade us in and out </h1>
-		// 	<button>AddClass</button>
-		// 	<p> TOGGLE to fade us in and out </p>
-		// </div>
-		// <div id = div_addClass>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_before>
-		// 	<h1> ADD Elements/ </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_after>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_after>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_append>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_html>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_attr>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_val>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>		
-		// <div id = div_text>
-		// 	<h1> ADD CLASS </h1>
-		// 	<button>AddClass</button>
-		// 	<p> Click button to add class </p>
-		// </div>
-		// <div id = div_data>
-		// 	<h1> Add DATA </h1>
-		// 	<button>AddData</button>	 -->		
+		<div id = div_hoverStyle>
+			<h1> HOVER AND CHANGE COLOR </h1>
+			<p> HOVER and CHANGE COLOR 2 </p>
+		<script>
+			$("#div_hoverStyle p, #div_hoverStyle h1").hover(function(){
+				$(this).addClass("blue")
+				});
+		</script>
+		</div>
 	</body>
 </html>
 
